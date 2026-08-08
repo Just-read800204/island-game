@@ -1,0 +1,14 @@
+{
+  "elder": {
+    "name": "島上長老",
+    "texture": "elder",
+    "facing": "down",
+    "dialogueId": "elder_intro"
+  },
+  "merchant": {
+    "name": "行腳商人",
+    "texture": "merchant",
+    "facing": "left",
+    "dialogueId": "merchant_intro"
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <title>島 · 像素遊戲起手式</title>
+    <style>
+      html,
+      body,
+      #app {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        overflow: hidden;
+        background: #15181f;
+        color: #f4f0e8;
+        font-family: system-ui, -apple-system, "Noto Sans TC", "PingFang TC", sans-serif;
+      }
+      canvas {
+        display: block;
+        /* 關掉瀏覽器的平滑縮放，像素才不會糊 */
+        image-rendering: pixelated;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "elder_intro": {
+    "speaker": "島上長老",
+    "redirectIfFlag": { "flag": "met_elder", "to": "elder_again" },
+    "pages": [
+      "又一個被浪推上岸的人。",
+      "這座島不大，走一圈天就黑了。要走的話，往南邊的沙灘去找船。",
+      "不過在那之前……先去跟路上那個商人聊聊吧，他手上有你需要的東西。"
+    ],
+    "setFlag": "met_elder"
+  },
+
+  "elder_again": {
+    "speaker": "島上長老",
+    "pages": ["南邊，沙灘。別在林子裡繞太久。"]
+  },
+
+  "merchant_intro": {
+    "speaker": "行腳商人",
+    "redirectIfFlag": { "flag": "has_lantern", "to": "merchant_after" },
+    "pages": [
+      "嘿，新面孔。",
+      "林子裡入夜就看不見路了。我這盞燈，賣你。"
+    ],
+    "choices": [
+      { "label": "買下油燈", "next": "merchant_buy", "setFlag": "has_lantern" },
+      { "label": "現在不需要", "next": "merchant_decline" }
+    ]
+  },
+
+  "merchant_buy": {
+    "speaker": "行腳商人",
+    "pages": ["聰明。拿好了，別讓風吹熄。"]
+  },
+
+  "merchant_decline": {
+    "speaker": "行腳商人",
+    "pages": ["隨你。天黑了再回來，價錢會不一樣。"]
+  },
+
+  "merchant_after": {
+    "speaker": "行腳商人",
+    "pages": ["燈還亮著就好。去吧。"]
+  },
+
+  "signpost": {
+    "speaker": "木牌",
+    "pages": [
+      "「北：石屋。南：沙灘。」",
+      "下面還有一行小字，被刮花了，只認得出「別」這個字。"
+    ]
+  }
+}
